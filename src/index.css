@@ -8,4 +8,17 @@
   @keyframes fadeIn {
     to { opacity: 1; }
   }
+  .animate-spin-slow {
+    animation: spin 6s linear infinite;
+  }
+  @keyframes spin {
+    100% { transform: rotate(360deg); }
+  }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+  }
 }
